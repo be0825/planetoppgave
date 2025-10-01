@@ -50,7 +50,7 @@ html {
 /* yun contain the next section*/
 
 .yun {
-  height: 800px;
+  min-height: 800px;
   border: 1px solid black;
   background: linear-gradient(270deg, #1a1111 0%, #998484 100%);
 
@@ -59,6 +59,7 @@ html {
   align-items: start;
   justify-content: space-evenly;
   flex-direction: row-reverse;
+  position: static;
 }
 .yun > img {
   height: 500px;
@@ -77,6 +78,7 @@ html {
   padding: 5px;
   background-color: blue;
   display: flex;
+  position: absolute;
 }
 .placeholder {
   height: auto;
@@ -106,6 +108,8 @@ footer > img {
   flex-direction: column;
   font-family: "Space Mono", monospace;
   font-size: 12px;
+  flex-wrap: wrap;
+  align-self: auto;
 }
 
 #link {
