@@ -43,7 +43,7 @@ nav ul {
 }
 
 #venuspic1 {
-  flex: 1; /* This is a shorthand for flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
+  flex: 1; /*   This is a shorthand for flex-grow: 1; flex-shrink: 1; flex-basis: 0; */
   padding: 50px;
   object-fit: cover;
   max-width: 50%;
