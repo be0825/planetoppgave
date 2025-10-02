@@ -91,7 +91,7 @@ html {
 /* footer and links, as well as the text in footer */
 
 footer {
-  height: 300px;
+  height: 250px;
   background-color: rgba(247, 232, 21, 0.349);
   display: flex;
   align-content: baseline;
@@ -99,23 +99,27 @@ footer {
   flex-direction: row-reverse;
   padding: 50px;
 }
-footer > img {
+footer > a + img {
   height: 90px;
+  width: 90px;
 }
-.credit {
+p.credit {
   border: none;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   font-family: "Space Mono", monospace;
   font-size: 12px;
-  flex-wrap: wrap;
-  align-self: auto;
+  /* flex-wrap: nowrap;
+  align-self: auto; */
+  text-wrap: wrap;
+  text-align: center;
 }
-
-#link {
+footer > p#link + a#link {
+  text-decoration: underline black;
   text-decoration: none;
   color: black;
-  text-decoration: underline black;
+}
+#link {
 }
 #link:hover {
   cursor: pointer;
