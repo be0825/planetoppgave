@@ -18,7 +18,7 @@ husk å bruke var() torkel!
   --oceonblue: #1b263b3d;
   --swcorridor: #ced3da;
   --sandybrown: #f5ac72;
-  --silver: #b9b9b9;
+  --silver: #dfdbdb;
 }
 html {
   scroll-behavior: smooth;
@@ -40,8 +40,12 @@ html {
   font-family: "Space Mono", monospace;
   font-size: 18px;
   width: auto;
+  max-width: 100%;
+  max-height: 60%;
   padding: 5px;
   background-color: var(--oceonblue);
+  overflow: auto;
+  margin: 10px;
 }
 .placeholder {
   height: auto;
@@ -63,53 +67,53 @@ html {
   color: var(--silver);
   text-decoration: var(--silver) underline 2px;
   padding: 20px;
-  align-self: start;
+  text-align: center;
 }
 
 .insight {
-  column-count: 2;
   height: 800px;
-  border: 1px solid black;
-  /* background-image: url("/images/galaxy-background1-greyscale.jpg"); */
-  /* background-size: cover; */
+  border: 30px ridge black;
   padding: 25px;
-  background: linear-gradient(270deg, var(--universe) 0%, #998484 120%);
+  background: linear-gradient(270deg, var(--universe) 0%, #998484bd 120%);
+}
+.venus-content {
+  width: auto;
+  height: auto;
   display: flex;
-  align-content: space-between;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
-.insight > section {
-  column-count: 3;
-}
-.insight > img {
-  height: 500px;
+
+.insight > section > img {
+  height: 550px;
   width: auto;
   /* clip-path: polygon(50% 0%, 50% 50%, 50% 100%, 0% 50%); */
-  border-radius: 8% 18% 18% 8%;
-  display: flex;
-  justify-self: end;
+  border-radius: 8% 10% 10% 8%;
+  /* display: flex; */
+  /* justify-self: end; */
 }
 /* ################################################## */
 /* yun contain the next section*/
 
 .yun {
-  min-height: 800px;
+  height: 1000px;
   border: 5px solid black;
   border-radius: 13%;
-  margin: 50px;
-  background: linear-gradient(270deg, #998484 0%, var(--universe) 120%);
+  margin: 20px;
+  background: linear-gradient(270deg, #bda4a4d8 0%, var(--universe) 120%);
 
   padding: 25px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   flex-direction: row;
 }
 .yun > p {
   height: auto;
-  max-width: 500px;
+  max-height: 80%;
+  max-width: 100%;
+  overflow: auto;
+  text-align: justify;
 }
 .yun > img {
   height: 650px;
@@ -117,7 +121,7 @@ html {
   border-radius: 40px;
   display: flex;
   align-self: center;
-  /* clip-path: polygon(0% 0%, 70% 0%, 70% 100%, 0% 100%); */
+  /* clip-path: polygon(0% 0%, 90% 0%, 90% 100%, 0% 100%); */
 }
 /* ################################################## */
 /* footer and links, as well as the text in footer */
