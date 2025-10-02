@@ -23,6 +23,9 @@ husk å bruke var() torkel!
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: var(--universe);
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -71,10 +74,9 @@ html {
 }
 
 .insight {
-  height: 800px;
-  border: 30px ridge black;
+  height: 900px;
   padding: 25px;
-  background: linear-gradient(270deg, var(--universe) 0%, #998484bd 120%);
+  background: linear-gradient(270deg, var(--universe) 0%, #998484bd 150%);
 }
 .venus-content {
   width: auto;
@@ -97,9 +99,12 @@ html {
 
 .yun {
   height: 1000px;
-  border: 5px solid black;
-  border-radius: 13%;
+  border: 5px solid var(--oceonblue);
+  border-top-width: 13px;
+  border-bottom-width: 13px;
+  border-radius: 9% 20% 9% 20%;
   margin: 20px;
+  margin-top: 0px;
   background: linear-gradient(270deg, #bda4a4d8 0%, var(--universe) 120%);
 
   padding: 25px;
@@ -116,8 +121,9 @@ html {
   text-align: justify;
 }
 .yun > img {
-  height: 650px;
+  max-height: 650px;
   width: auto;
+  max-width: 1100px;
   border-radius: 40px;
   display: flex;
   align-self: center;
