@@ -49,6 +49,8 @@ body {
   background-color: var(--oceonblue);
   overflow: auto;
   margin: 10px;
+  text-wrap: wrap;
+  /* text-wrap-style: balance; */
 }
 .placeholder {
   height: auto;
@@ -118,7 +120,7 @@ body {
   max-height: 80%;
   max-width: 100%;
   overflow: auto;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .yun > img {
   max-height: 650px;
@@ -127,6 +129,12 @@ body {
   border-radius: 40px;
   display: flex;
   align-self: center;
+  border-style: solid;
+  /* border-right: 2px;
+  border-left: 0; */
+  border: 2px;
+  padding: 0 4px 4px;
+  border-image: linear-gradient(to bottom, #565454, #eee, #565454) 1 100%;
   /* clip-path: polygon(0% 0%, 90% 0%, 90% 100%, 0% 100%); */
 }
 /* ################################################## */
