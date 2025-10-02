@@ -53,4 +53,5 @@ nav ul {
   flex: 1;
   padding: 50px;
   max-width: 50%;
+  font-family: "Space Mono", monospace;
 }
